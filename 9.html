@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function fibonacci(limit) {
+        //     let num1 = 0;
+        //     let num2 = 1;
+        //     let sum;
+
+        //     console.log(`Dãy Fibonacci cho đến khi tổng giá trị nhỏ hơn ${limit}:`);
+        //     console.log(num1);
+        //     console.log(num2);
+
+        //     sum = num1 + num2;
+        //     while (sum < limit) {
+        //         console.log(sum);
+        //         num1 = num2;
+        //         num2 = sum;
+        //         sum = num1 + num2;
+        //     }
+        // }
+
+        //  let number = parseInt(prompt("Nhập một số nguyên dương:"));
+         let n = parseInt(prompt("Nhập một số nguyên dương:"));
+     let f0=0;
+    let f1=1;
+    let f2;
+    let sum=0;
+    while (sum<n){
+        document.write(f0 + " ")
+        f2=f0+f1;
+        f0=f1;
+        f1=f2;
+        sum+=f0;
+    }
+    </script>
+</body>
+</html>

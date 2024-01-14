@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+        function printTriangle(number) {
+            console.log("Tam giác vuông phía trên:");
+            for (let i = 1; i <= number; i++) {
+                let row = "";
+                for (let j = 1; j <= i; j++) {
+                row += "* ";
+                }
+                console.log(row);
+            }
+
+            console.log("Tam giác vuông phía dưới:");
+            for (let i = number; i >= 1; i--) {
+                let row = "";
+                for (let j = 1; j <= i; j++) {
+                row += "* ";
+                }
+                console.log(row);
+            }
+        }
+
+        let number = parseInt(prompt("Nhập một số nguyên dương:"));
+        printTriangle(number);
+    </SCript>
+</body>
+</html>
